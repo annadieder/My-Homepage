@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anna Diederichs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-inner">
+      <h1 class="hero-heading">
+        <span id="typewriter"></span><span class="cursor" id="cursor"></span>
+      </h1>
+      <p class="hero-sub" id="heroSub">
+        Scrollytelling<span class="sep">|</span>Data Viz<span class="sep">|</span>Design
+      </p>
+    </div>
+    <button class="scroll-btn" id="scrollBtn">
+      Scroll
+      <span class="arrow">↓</span>
+    </button>
+  </section>
+
+  <!-- Work -->
+  <section id="work">
+    <div class="two-col-inner">
+      <div>
+        <p class="col-label reveal">Work</p>
+        <h2 class="col-title reveal">Selected<br>Projects</h2>
+      </div>
+      <div class="cards-grid">
+        <div class="card reveal">
+          <div class="card-inner">
+            <span class="card-num">01</span>
+            <h3 class="card-title">Project One</h3>
+            <p class="card-tag">Scrollytelling · Data Viz</p>
+          </div>
+          <span class="card-arrow">↗</span>
+        </div>
+        <div class="card reveal" style="transition-delay: 0.1s">
+          <div class="card-inner">
+            <span class="card-num">02</span>
+            <h3 class="card-title">Project Two</h3>
+            <p class="card-tag">Interactive · Design</p>
+          </div>
+          <span class="card-arrow">↗</span>
+        </div>
+        <div class="card reveal" style="transition-delay: 0.2s">
+          <div class="card-inner">
+            <span class="card-num">03</span>
+            <h3 class="card-title">Project Three</h3>
+            <p class="card-tag">Data Viz · Animation</p>
+          </div>
+          <span class="card-arrow">↗</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="two-col-inner">
+      <div>
+        <p class="col-label reveal">About</p>
+        <h2 class="col-title reveal">Lorem ipsum<br>dolor sit.</h2>
+      </div>
+      <div class="reveal">
+        <div class="about-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
+        </div>
+        <div class="about-skills">
+          <span class="skill-tag">Skill One</span>
+          <span class="skill-tag">Skill Two</span>
+          <span class="skill-tag">Skill Three</span>
+          <span class="skill-tag">Skill Four</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Animation settings panel -->
+  <div id="panel">
+    <div id="sliders">
+      <div class="slider-row">
+        <div class="slider-label">Speed <span class="slider-val" id="speedVal"></span></div>
+        <input type="range" id="speedSlider" min="0" max="20" step="0.5" value="1">
+      </div>
+      <div class="slider-row">
+        <div class="slider-label">Lines <span class="slider-val" id="linesVal"></span></div>
+        <input type="range" id="linesSlider" min="5" max="40" value="15">
+      </div>
+      <div class="slider-row">
+        <div class="slider-label">Scale <span class="slider-val" id="scaleVal"></span></div>
+        <input type="range" id="scaleSlider" min="100" max="600" value="370">
+      </div>
+    </div>
+    <button id="toggleBtn">+ Open Me</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
